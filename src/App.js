@@ -25,12 +25,14 @@ function App() {
         console.log(res.data)
       })
   }, [])
-  
+
   return (
+    <div>
+    <Header />
     <div className="App">
-      <p>
-        NASA PHOTO OF THE DAY
-      </p>
+      <Date date={date} />
+      <Image src={image} title={title} explanation={story}/>
+    </div>
     </div>
   );
 }
